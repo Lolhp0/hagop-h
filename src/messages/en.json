@@ -1,0 +1,30 @@
+{
+    "fullName": "Hagop Hovaguimian",
+    "header": {
+        
+    },
+    "language-tooltips": {
+        "eng": "Switch to English",
+        "arm": "Switch to Armenian"
+    },
+    "home": {
+        "mainHeading": "<special>Front end</special> Web Developer"
+    },
+    "footer": {
+        "contact-col-title": "Contact",
+        "social-col-title": "Socials"
+    },
+
+    "theme": {
+        "light": "Switch to Light Theme",
+        "dark": "Switch to Dark Theme"
+    },
+
+    "error-pages": {
+        "404": {
+            "mainTitle": "404 - Page Not Found",
+            "subTitle": "Sorry, the page you are looking for does not exist.",
+            "goback": "Go back to Home"
+        }
+    }
+}

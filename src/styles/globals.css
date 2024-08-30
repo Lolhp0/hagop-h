@@ -2,28 +2,71 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.dark:root {
+  --scrollbar-thumb-color: #393e53;
+  --scrollbar-track-color: #212432;
+}
+.light:root {
+  --scrollbar-thumb-color: #828d96;
+  --scrollbar-track-color: #c0c5c8;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+::-webkit-scrollbar {
+  width: 9px;
+}
+::-webkit-scrollbar-thumb {
+  box-shadow: 0 0 1px 1px var(--scrollbar-track-color) inset;
+  background-color: var(--scrollbar-thumb-color);
+  border-radius: 4rem;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--scrollbar-track-color);
+}
+
+.inner__padding {
+  @apply px-2 md:px-4 lg:px-6 xl:px-8
+}
+
+.button__fill {
+  @apply duration-75 !min-w-fit h-10 flex items-center justify-center gap-2 px-3 bg-slate-300 dark:bg-slate-700
+}
+
+.language__item {
+  @apply 
+  duration-75
+  w-fit 
+  h-fit 
+  flex 
+  items-center 
+  justify-center 
+  p-3 
+  text-slate-400 
+  dark:text-slate-600
+  hover:text-slate-950
+  dark:hover:text-slate-50
+}
+
+.heading__title {
+  @apply font-bold text-4xl md:text-5xl lg:text-6xl
+}
+.typography__p {
+  @apply sm:text-lg text-slate-500
+}
+.tooltip__fill {
+  @apply !w-fit !h-10 !p-3 !flex !items-center !justify-center !gap-2 !bg-slate-200/50 dark:!bg-slate-800/50 !backdrop-blur-3xl
+}
+
+.footer__column {
+  @apply w-[260px] h-fit text-left max-sm:w-full
+}
+.footer__column-title {
+  @apply text-2xl
 }
 
 @layer utilities {

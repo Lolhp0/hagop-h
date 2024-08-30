@@ -1,0 +1,31 @@
+{
+    "fullName": "Յակոբ Յովակիմեան",
+    "header": {
+        
+    },
+    "language-tooltips": {
+        "eng": "Թարքմանել Անգլերեն",
+        "arm": "Թարքմանել Հայերեն"
+    },
+    "home": {
+        "mainHeading": "<special>Ֆրոնդ Էնտ</special> Վեբ Ծրաքրավորող"
+    },
+
+    "footer": {
+        "contact-col-title": "Կապ",
+        "social-col-title": "Սոցիալներ"
+    },
+
+    "theme": {
+        "light": "Բոխել բաց գոյնի",
+        "dark": "Բոխել գոց գոյնի"
+    },
+
+    "error-pages": {
+        "404": {
+            "mainTitle": "404 - Էդ էջը քոյություն չունի",
+            "subTitle": "",
+            "goback": "Վերադառնալ գլխավոր էջ"
+        }
+    }
+}
